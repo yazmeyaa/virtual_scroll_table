@@ -1,15 +1,16 @@
-table {
+.table {
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
-    table-layout:fixed;
+    table-layout: fixed;
 }
 
-tr {
+.table tr {
     background: #90909085;
 }
 
-td, th {
+.table td,
+th {
     box-sizing: border-box;
     padding: 0.5rem;
     border: 1px solid black;

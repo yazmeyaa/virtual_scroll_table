@@ -8,4 +8,4 @@
 - visibleRows: 15
 - numberOfRows: 200 000
 
-[Demo page](https://yazmeyaa.github.io/virtual_scroll_table/)
+<a href="https://yazmeyaa.github.io/virtual_scroll_table/" target="_blank">Demo page</a>

@@ -34,6 +34,9 @@ function App() {
 
   return (
     <main>
+      <div style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
+        <span>This table contains {data.length} rows </span>
+      </div>
       <Table
         visibleRows={visibleRows}
         data={data}

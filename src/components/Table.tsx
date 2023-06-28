@@ -38,6 +38,11 @@ export function Table({ data, visibleRows, rowHeight, colWidth }: TableProps) {
       };
     }
   }, [rowHeight]);
+
+  useEffect(() => {
+    if (!scrollContainerRef.current) return;
+    scrollContainerRef.current.scrollTo({ top: 0 });
+  }, [data]);
   return (
     <div
       style={{

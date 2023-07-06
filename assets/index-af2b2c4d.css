@@ -1,0 +1,1 @@
+.table{border:1px solid black;border-collapse:collapse;width:100%;table-layout:fixed}.table tr,tbody{background:#f4f4f4;color:#525252}.table tr{transition:background-color 70ms cubic-bezier(0,0,.38,.9)}.table tr:hover{background-color:#e5e5e5;color:#161616}.table td,th{box-sizing:border-box;padding:.5rem;border:none}

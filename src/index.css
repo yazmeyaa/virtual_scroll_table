@@ -5,13 +5,24 @@
     table-layout: fixed;
 }
 
-.table tr {
-    background: #90909085;
+.table tr, tbody {
+    background: #f4f4f4;
+    color: #525252;
 }
+
+.table tr {
+    transition: background-color 70ms cubic-bezier(0, 0, 0.38, 0.9);
+}
+
+.table tr:hover {
+    background-color: #e5e5e5;
+    color: #161616;
+}
+
 
 .table td,
 th {
     box-sizing: border-box;
     padding: 0.5rem;
-    border: 1px solid black;
+    border: none;
 }

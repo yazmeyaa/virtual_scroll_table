@@ -10,6 +10,7 @@ interface TableProps {
 export function Table({ data, visibleRows, rowHeight, colWidth }: TableProps) {
   const [start, setStart] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  
 
   function getTopHeight() {
     return rowHeight * start;
@@ -59,7 +60,8 @@ export function Table({ data, visibleRows, rowHeight, colWidth }: TableProps) {
       />
       <table className="table">
         <tbody>
-          {data.slice(start, start + visibleRows + 1).map((row, rowIdx) => {
+          {/* +25 to prevent blinking when load */}
+          {data.slice(start, start + visibleRows + 10).map((row, rowIdx) => {
             return (
               <tr key={start + rowIdx} style={{ height: rowHeight }}>
                 {row.map((cell, cellIdx) => {
